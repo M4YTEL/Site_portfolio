@@ -1,0 +1,165 @@
+@import 'main.css';
+
+
+/******************************************FOOTER****************************************/
+
+.info-et-copyright {
+    padding: 1rem 0 1rem 0;
+    /* background-color: var(--gris_clair1); */
+    /* position: sticky; */
+    width: 100%;
+}
+
+/******************************************FOOTER****************************************/
+
+/******************************************FOOTER NAVBAR*********************************/
+
+.navbar-footer {
+    margin: 1rem 0 1rem 0;
+    text-align: center;
+    /* position: relative; */
+}
+
+.logo-footer {
+    max-width: 8rem;
+    transition: .4s ease-in-out;
+}
+
+.logo-footer:hover {
+    transform: scale(.95);
+    transition: .4s ease-in-out;
+}
+
+/* .navbar-footer-container {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    text-align: center;
+} */
+
+.navbar-links-footer {
+    /* position: absolute; */
+    /* top: 100%;
+    right: 0; */
+    /* background: var(--primary); */
+    /* border-radius: 6px; */
+    /* transform: scaleX(0);
+    transform-origin: right center;
+    transition: all .4s ease-in-out; */
+    padding-top: 1rem;
+    gap: 2.5rem;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.navbar-links-footer a {
+    color: var(--bleu_fonce1);
+    font-size: 18px;
+    font-weight: 700;
+    background: linear-gradient(to right,
+            rgba(0, 62, 203, 0),
+            rgba(0, 62, 203, 0),
+            rgba(0, 62, 203, 0)),
+        linear-gradient(to right,
+            rgba(0, 62, 203, 1),
+            rgba(0, 62, 203, 1),
+            rgba(0, 62, 203, 1));
+    background-size: 100% 3px, 0 3px;
+    background-position: 100% 100%, 0 100%;
+    background-repeat: no-repeat;
+    transition: background-size 400ms;
+}
+
+.navbar-links-footer a:hover {
+    background-size: 0 3px, 100% 3px;
+    color: var(--bleu_fonce2);
+}
+
+.navbar-links-footer a:active {
+    background-size: 0 3px, 100% 3px;
+    color: var(--bleu_fonce3);
+}
+
+.navbar-links-footer.open a {
+    padding-right: 0em;
+    font-size: 18px;
+}
+
+/* .navbar-link-footer {
+    padding: 1em 4em;
+} */
+
+/******************************************FOOTER NAVBAR****************************************/
+
+
+/******************************************FOOTER****************************************/
+
+
+.footer-content {
+    padding: 1rem 0 0 0;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+.info-et-copyright .container {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    /* background-color: var(--primary); */
+}
+
+
+.footer-description {
+    padding: 2rem 0 1rem 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+
+.footer-description .icones_reseaux {
+    display: flex;
+}
+
+
+.footer-description i {
+    font-size: 35px;
+}
+
+.footer-description i:first-child {
+    margin-right: 1rem;
+}
+
+/* .footer-content .copyright {
+    margin: 0 2rem 0 0;
+} */
+
+@media (max-width: 768px) {
+
+    .navbar-links-footer {
+        flex-direction: column;
+    }
+
+    .footer-content {
+        flex-direction: column;
+        /* gap: 2rem; */
+    }
+
+    .footer-description .logo {
+        display: none;
+    }
+}
+
+
+/*****************************************************************************/

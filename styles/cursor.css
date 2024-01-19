@@ -1,0 +1,123 @@
+@import 'main.css';
+
+.cursor {
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    border: 1px solid var(--bleu_fonce1);
+    transition: all 200ms ease-out;
+    position: fixed;
+    pointer-events: none;
+    left: 0;
+    top: 0;
+    transform: translate(calc(-50% + 15px), -50%);
+    z-index: 99999;
+}
+
+.cursor2 {
+    width: 20px;
+    height: 20px;
+    border-radius: 100%;
+    background-color: var(--bleu_fonce1);
+    opacity: .4;
+    position: fixed;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+    transition: width .3s, height .3s, opacity .3s;
+    z-index: 99999;
+}
+
+.cursor.open {
+    color: var(--white);
+    border: 1px solid var(--white);
+    z-index: 99999;
+}
+
+.cursor2.open {
+    color: var(--white);
+    background-color: var(--white);
+    z-index: 99999;
+}
+
+.hover {
+    background-color: var(--bleu_fonce2);
+    opacity: 0.75;
+}
+
+.cursorinnerhover {
+    width: 50px;
+    height: 50px;
+    opacity: .5;
+    z-index: 99999;
+}
+
+/******************* CURSOR V1 ****************/
+/*
+.cursor {
+    width: 36px;
+    height: 36px;
+    color: var(--quaternary);
+    border: 1px solid var(--quaternary);
+    border-radius: 50%;
+    position: absolute;
+    pointer-events: none;
+    animation: Anim1 1s infinite alternate;
+    z-index: 99999;
+}
+
+.cursor::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 5px;
+    height: 5px;
+    background: red;
+
+    border-radius: 50%;
+}
+
+.cursor.open {
+    color: #fff;
+    border: 1px solid #fff;
+}
+
+
+
+.cursor-expand {
+    animation: Anim3 .5s;
+    background: rgba(147, 131, 255, 0.5);
+    border: 1px solid var(--quinary);
+
+}
+
+
+@keyframes Anim1 {
+    form {
+        transform: scale(1) rotate(0deg);
+    }
+
+    to {
+        transform: scale(0.8) rotate(80deg);
+    }
+}
+
+
+
+@keyframes Anim3 {
+
+    0% {
+        transform: scale(1);
+    }
+
+
+    50% {
+        transform: scale(1.8);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+*/

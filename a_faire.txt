@@ -1,0 +1,13 @@
+- Hasher l'url php
+- toute les icone en glassmorphisme
+- chgmt couleur card en bleu hover
+- champ converver les données pour être recontacter pdt durée légal button radio form
+- compression des images / optimisation générale
+
+
+- captcha (anti spam)
+- Gerer la securité (accès aux fichiers, données etc...)
+- Recevoir l'entrée formulaire par e-mail
+- Ajouter piece jointe = champ document pour téléverser
+- cookies 
+

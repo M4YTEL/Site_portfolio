@@ -1,0 +1,53 @@
+@import'main.css';
+
+/**********************ARROW-UP**********************/
+.scroll_to_top {
+    /* background: var(--gris_clair1); */
+    position: fixed;
+    bottom: 45px;
+    width: 40px;
+    height: 40px;
+    /* border-radius: 4rem; */
+    /* box-shadow: 0 3px 20px -2px rgba(0, 62, 203, 0.8); */
+    z-index: 1;
+    right: -6rem;
+    transition: all .6s ease-in-out;
+}
+
+.scroll_to_top:hover {
+    transform-origin: center;
+    transition: .4s ease-in-out;
+    /* box-shadow: 0 3px 20px 5px rgba(242, 201, 76, 0.8); */
+    /* border-radius: 4rem; */
+}
+
+/* .scroll_to_top:active {
+    box-shadow: 0 3px 30px 5px rgba(147, 131, 255, 1);
+} */
+
+.scroll_to_top .bi-arrow-up-square-fill {
+    color: var(--bleu_fonce1);
+    font-size: 65px;
+}
+
+.scroll_to_top .bi-arrow-up-square-fill:hover {
+    color: var(--bleu_fonce2);
+}
+
+.scroll_to_top .bi-arrow-up-square-fill:active {
+    color: var(--bleu_fonce3);
+}
+
+.scroll_to_top.scroll {
+    right: 45px;
+    transition: .6s ease-in-out;
+}
+
+/* @media (max-width: 768px) {
+    .scroll_to_top {
+        bottom: 70px;
+        right: 45px;
+    }
+} */
+
+/**********************ARROW-UP**********************/

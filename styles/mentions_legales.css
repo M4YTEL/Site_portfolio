@@ -1,0 +1,142 @@
+@import 'main.css';
+
+
+
+
+/*****************MENTIONS LIST*********************/
+.mentions-header {
+    margin: 6rem 0 4rem 0;
+    position: relative;
+}
+
+.mention-container {
+    padding: 0rem 5% 3rem 5%;
+}
+
+.item-title {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: center;
+    align-items: center;
+}
+
+.mentions-list {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+}
+
+.mentions-list .item {
+    /* width: 100%; */
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    text-align: left;
+    padding: 1.5rem;
+    border-radius: 1rem;
+    background-color: var(--primary);
+    /* box-shadow: 0 10px 20px 0px rgba(41, 33, 95, 0.1); */
+    /* transition: all 0.2s ease-in-out; */
+}
+
+.mentions-list .item.open {
+    /* box-shadow: 0 20px 40px -14px rgba(41, 33, 95, 0.25); */
+    background-color: var(--quaternary);
+    /* transition: all 0.2s ease-in-out; */
+}
+
+.item h4 {
+    width: auto;
+    text-align: left;
+}
+
+/* .item h4.open {
+    color: var(--primary);
+} */
+
+.item .texte {
+    width: 100%;
+    display: none;
+}
+
+/* .item .texte.open {
+    color: var(--primary);
+    display: block;
+} */
+
+.item-plus {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.item .btn-list {
+    border: none;
+    padding: 0 0.62rem 0 0.62rem;
+    /* width: 50px;
+    height: 50px; */
+    color: var(--color-text);
+    transform-origin: center;
+    transition: all .2s ease-in-out;
+}
+
+.item .btn-list.open {
+    background-color: transparent;
+    transform: rotate(45deg);
+    transform-origin: center center;
+    transition: all .2s ease-in-out;
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .item .texte.open {
+        width: 70%;
+    }
+
+    .item-plus {
+        justify-content: space-between;
+    }
+}
+
+@media (max-width:768px) {
+
+    .item .texte.open {
+        width: 100%;
+    }
+
+    .item-plus {
+        justify-content: center;
+    }
+
+}
+
+/**************************************/
+
+.mentions-header .highlight {
+    width: 350px;
+    height: 18px;
+    background: var(--quinary);
+    border-radius: 1rem;
+    bottom: 40px;
+    opacity: 0.5;
+    position: absolute;
+    z-index: -1;
+}
+
+.mentions-content h3 {
+    margin-top: 4rem;
+}
+
+/* 
+.mentions-content p:last-child {
+    margin-bottom: 6rem;
+} */

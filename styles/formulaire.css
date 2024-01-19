@@ -1,0 +1,182 @@
+@import 'main.css';
+
+
+/*****************************************CONTACT FORM******************************************/
+
+input,
+textarea {
+    padding-left: 0.5rem;
+    border: none;
+    border-bottom: 2px solid var(--primary);
+    width: 100%;
+}
+
+.contact-form {
+    width: 50%;
+}
+
+.contact-form-content {
+    position: relative;
+    width: 100%;
+    background: rgba(255, 255, 255, 1);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    padding: 2rem;
+}
+
+
+.contact-form .name-group {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.form-informations:nth-child(1) {
+    width: 30%
+}
+
+.form-informations:nth-child(2) {
+    width: 60%
+}
+
+.form-informations {
+    margin-bottom: 2rem;
+}
+
+.asterix {
+    text-align: left;
+    font-weight: 300;
+    letter-spacing: 0;
+    margin-bottom: 1rem;
+}
+
+.documents-content {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: left;
+    padding: 1rem 0 2rem 0;
+    gap: 2rem;
+
+}
+
+.form-documents p {
+    color: inherit;
+    letter-spacing: 0;
+}
+
+.documents-content label {
+    /* cursor: pointer; */
+    transition: .25s ease-in-out;
+}
+
+.drag-area {
+    border: 2px dashed var(--quinary);
+    width: 5rem;
+    height: 5rem;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background: rgba(0, 62, 203, 0.1);
+    position: relative;
+}
+
+
+.drag-area .bi-upload {
+    color: var(--quinary);
+    /* color: #fff; */
+    font-size: 1.5rem;
+}
+
+.drag-area input {
+    display: none;
+}
+
+
+.drag-area:nth-child(1) {
+    opacity: 1;
+}
+
+.drag-area:hover {
+    border: 2px solid var(--bleu_fonce1);
+}
+
+/**/
+
+.btn-delete {
+    color: var(--bleu_fonce1);
+    top: -0.3rem;
+    /* bottom: 3rem; */
+    right: 0rem;
+    position: absolute;
+    border: none;
+    background: none;
+    transition: all .4s ease-in-out;
+    font-size: 1.5rem;
+    z-index: 1;
+}
+
+/* .btn-delete:hover {
+    transform: scale(.9);
+    transform-origin: center;
+    transition: all .4s ease-in-out;
+} */
+
+.btn-delete:active {
+    color: var(--quinary);
+}
+
+/**/
+
+#file-previews {
+    max-width: 80px;
+    max-height: 80px;
+    border-radius: 5px;
+}
+
+textarea {
+    resize: vertical;
+}
+
+/* Change la couleur du champ lorsque celui-ci est pré-rempli par google-chrome */
+input:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0 1000px var(--gris_clair1) inset;
+    /* border-radius: 8px; */
+}
+
+input:focus {
+    outline: 2px solid var(--bleu_fonce1);
+    border-radius: 8px;
+    background-color: rgba(0, 62, 203, 0.1);
+}
+
+textarea:focus {
+    outline: 2px solid var(--bleu_fonce1);
+    border-radius: 8px;
+    background-color: rgba(0, 62, 203, 0.1);
+}
+
+input:focus::placeholder {
+    color: transparent;
+}
+
+textarea:focus::placeholder {
+    color: transparent;
+}
+
+@media (max-width : 768px) {
+
+    .contact-form {
+        width: 85%;
+        margin-bottom: 4rem;
+    }
+
+}
+
+/*****************************************CONTACT FORM******************************************/

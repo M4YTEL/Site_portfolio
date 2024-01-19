@@ -1,0 +1,338 @@
+@font-face {
+    font-family: 'Karla';
+    src: url('../font/Karla-VariableFont_wght.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('../font/Montserrat-VariableFont_wght.ttf') format('truetype');
+}
+
+:root {
+    --primary: #f9f9f9;
+    --gris_fonce1: #323232;
+    --bleu_fonce1: #003ECB;
+    /* rgba(0, 62, 203, 1); */
+    --bleu_fonce2: #002f9c;
+    --bleu_fonce3: #002272;
+    /* rgba(242, 201, 76, 1); */
+    --white: #ffff;
+    --gris_clair1: #f4f7fa;
+    --gris_clair2: #eaeaea;
+    --gris_clair3: #dbdbdb;
+    --text-color: #0c1c3e;
+    /*rgba(12, 28, 62, 1)*/
+    --border-radius: 16px;
+    --border-radius-btn: 12px;
+    --border-radius-details: 8px;
+    --box-shadow: 1px 1px 50px -10px rgba(0, 62, 203, .7);
+    --transition: all .4s ease-in-out;
+}
+
+/******************** STRUCTURE ********************/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    cursor: none;
+}
+
+html,
+body {
+    height: 100%;
+    scroll-behavior: smooth;
+    background-color: var(--gris_clair1);
+}
+
+body {
+    font-family: "Karla";
+    font-size: 16px;
+    line-height: 35px;
+    overflow-x: hidden;
+}
+
+/******************** STRUCTURE ********************/
+
+/******************** TITRES ET ELEMENTS DE TEXTE ********************/
+
+h1 {
+    font-family: 'Montserrat', sans-serif;
+    overflow-wrap: break-word;
+    color: var(--bleu_fonce1);
+    font-size: 50px;
+    line-height: 60px;
+    font-weight: 700;
+    letter-spacing: 0rem;
+    padding-bottom: 2rem;
+    /* text-align: center; */
+    /*padding: 20px 0px 0px 0px; */
+    /* text-transform: uppercase; */
+}
+
+h2 {
+    font-family: 'Montserrat', sans-serif;
+    overflow-wrap: break-word;
+    color: var(--bleu_fonce1);
+    font-size: 40px;
+    line-height: 45px;
+    font-weight: 700;
+    letter-spacing: -0.1rem;
+    margin: 20px 0;
+}
+
+
+h3 {
+    font-family: 'Karla';
+    color: var(--bleu_fonce1);
+    font-size: 24px;
+    line-height: 30px;
+    font-weight: 700;
+    letter-spacing: 0.05rem;
+    margin: 20px 0;
+}
+
+
+h4 {
+    font-family: 'Karla';
+    color: var(--text-color);
+    font-size: 23px;
+    line-height: 30px;
+    font-weight: 700;
+    letter-spacing: 0.05rem;
+    /* margin: 30px 0 30px 0; */
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    h1 {
+        font-size: 44px;
+        line-height: 60px;
+    }
+
+    h2 {
+        font-size: 36px;
+        line-height: 40px;
+    }
+
+    h3 {
+        font-size: 24px;
+        line-height: 28px;
+    }
+
+    h4 {
+        font-size: 22px;
+        line-height: 26px;
+    }
+}
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 38px;
+        line-height: 50px;
+    }
+
+    h2 {
+        font-size: 32px;
+        line-height: 36px;
+    }
+
+    h3 {
+        font-size: 22px;
+        line-height: 26px;
+    }
+
+    h4 {
+        font-size: 20px;
+        line-height: 24px;
+    }
+}
+
+
+
+
+p {
+    font-family: 'Karla';
+    overflow-wrap: break-word;
+    color: var(--text-color);
+    letter-spacing: 0.08rem;
+    line-height: 1.5rem;
+    text-align: justify;
+}
+
+/* p:not(:last-child) {
+    margin-bottom: 20px;
+} */
+
+ul,
+ol {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    /* display: inline-block; */
+}
+
+::selection {
+    background-color: var(--bleu_fonce1);
+    color: var(--white)
+}
+
+/******************** TITRES ET ELEMENTS DE TEXTE ********************/
+
+/* 
+.separator-vertical {
+    border: none;
+    border: 1px solid var(--text-color);
+    width: 1rem;
+    transform: rotate(-90deg);
+    margin: 0 2rem 0 2rem;
+    opacity: .75;
+} */
+
+.container {
+    width: 90%;
+    margin: 1rem auto 1rem auto;
+    background-color: var(--white);
+    border-radius: var(--border-radius);
+}
+
+input,
+button,
+textarea,
+select {
+    font: inherit;
+}
+
+
+.btn {
+    font-weight: 700;
+    border-radius: var(--border-radius-btn);
+    background-color: transparent;
+    border: none;
+    color: white;
+    transition: .4s ease-in-out;
+    padding: 0.4em 1.5em;
+}
+
+.btn-primary {
+    font-family: "Karla";
+    background: var(--bleu_fonce1);
+}
+
+.btn-primary:hover {
+    background: var(--bleu_fonce2);
+}
+
+.btn-primary:active {
+    background: var(--bleu_fonce3);
+}
+
+.btn-secondary {
+    font-family: "Karla";
+    color: var(--secondary);
+    background: var(--gris_clair2);
+}
+
+.btn-secondary:hover {
+    background: var(--gris_clair3);
+}
+
+.btn-secondary:active {
+    color: var(--gris_clair1);
+    background: var(--gris_fonce1);
+}
+
+.btn-tertiary {
+    font-family: "Karla";
+    color: var(--bleu_fonce1);
+    background: none;
+}
+
+.btn-list {
+    font-family: "Karla";
+    font-size: 30px;
+    font-weight: 700;
+    /* padding: 0 0.7rem 0 0.7rem; */
+    /* border: 3px solid var(--quinary); */
+    border-radius: 20rem !important;
+    color: var(--gris_clair1);
+    background-color: transparent;
+    transition: all .4s ease-in-out;
+}
+
+.btn-submit {
+    width: 100%;
+    font-family: "Karla";
+    margin-top: 0.5rem;
+    padding: 0.6em 2em;
+    background: var(--bleu_fonce1);
+}
+
+.btn-submit:hover {
+    background: var(--bleu_fonce2);
+}
+
+.btn-submit:active {
+    background: var(--bleu_fonce3);
+}
+
+.btn .bi {
+    font-size: 22px;
+    margin-left: 0.8rem;
+    font-weight: bold;
+}
+
+/* .btn-secondary:focus {
+    color: #f6f6f6;
+    background: var(--gris_fonce1);
+} */
+
+
+/* .btn-close:active {
+    background-color: var(--quinary);
+    box-shadow: 0 3px 15px -2px rgba(147, 131, 255, 1);
+} */
+
+/************************* SCROLLBAR *******************/
+/* Works on Firefox */
+* {
+    scrollbar-width: thin;
+    scrollbar-color: var(--bleu_fonce1);
+}
+
+/* Works on Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+    width: 15px;
+    /* width of the entire scrollbar */
+}
+
+*::-webkit-scrollbar-track {
+    background: var(--gris_clair1);
+    /* color of the tracking area */
+}
+
+
+*::-webkit-scrollbar-thumb {
+    background-color: var(--bleu_fonce1);
+    /* color of the scroll thumb */
+    border-radius: 10px;
+    /* roundness of the scroll thumb */
+    border: 3px solid var(--gris_clair1);
+    /* creates padding around scroll thumb */
+}
+
+*::-webkit-scrollbar-thumb:hover {
+    background-color: var(--bleu_fonce2);
+    border: 2px solid var(--gris_clair1);
+    /* reduce padding around scroll thumb */
+}
+
+*::-webkit-scrollbar-thumb:active {
+    background-color: var(--bleu_fonce3);
+    border: 2px solid var(--gris_clair1);
+    /* reduce padding around scroll thumb */
+}
+
+/********************************************/

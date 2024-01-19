@@ -1,0 +1,59 @@
+@import'main.css';
+
+
+table {
+    margin: 2rem 0 2rem 0;
+}
+
+table thead tr th {
+    font-size: 20px;
+}
+
+table thead tr th:first-child {
+    font-size: 20px;
+    border-radius: 0.8rem 0 0 0;
+}
+
+
+table thead tr th:last-child {
+    font-size: 20px;
+    border-radius: 0 0.8rem 0 0;
+}
+
+thead {
+    background-color: var(--quaternary);
+    color: var(--primary);
+}
+
+tbody {
+    background-color: var(--primary);
+
+}
+
+caption {
+    padding: 10px;
+    caption-side: bottom;
+}
+
+table {
+    border-collapse: collapse;
+    /* border: 2px solid rgb(200, 200, 200); */
+    letter-spacing: 1px;
+    font-family: "Karla";
+    font-size: 0.8rem;
+    border-radius: 2rem;
+}
+
+tr {
+    border-radius: 5rem;
+}
+
+td,
+th {
+    /* border: 1px solid rgb(190, 190, 190); */
+    padding: 6px 12px;
+}
+
+td {
+    text-align: left;
+}

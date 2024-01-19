@@ -1,0 +1,307 @@
+@import 'main.css';
+
+
+/******************************banner*****************************/
+
+/* <div class="cropped-image"></div>
+
+.cropped-image {
+    width: var(--image-size);
+    height: var(--image-size);
+  
+    background-image: url(https://ucarecdn.com/8db1b0fe-3753-4602-953c-2263b9c0b4a5/-/preview/1200x800/);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  
+    border-radius: 25% 75% / 50%;
+    cursor: help;
+  } */
+
+.banner_ST {
+    height: calc(100vh -52.8px);
+    width: 100%;
+    height: 95vh;
+    background: url('../images/ST/ST_application_mobile_étiré.jpg');
+    background-size: cover;
+    background-position: center;
+    /* background-position-x: -300px; */
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.banner-title_ST {
+    margin-right: 10%;
+    max-width: 50%;
+    padding: 2em;
+    background: rgba(255, 255, 255, 0.5);
+    border-radius: var(--border-radius);
+    backdrop-filter: blur(3px);
+    border: 1px solid rgba(255, 255, 255, 0.6)
+}
+
+
+@media (max-width: 768px) {
+    .banner_Izzy {
+        justify-content: center;
+    }
+
+    .banner-title_Izzy {
+        max-width: 90%;
+        margin: auto;
+        text-align: center;
+    }
+}
+
+/*********************CAROUSEL********************/
+* {
+    box-sizing: border-box
+}
+
+/* Slideshow container */
+.slideshow-container {
+    max-width: 500px;
+    position: relative;
+    margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+    display: none;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+    /* cursor: pointer; */
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 1s all ease-in-out;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Caption text */
+.text {
+    color: var(--quaternary);
+    font-size: 25px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+    color: var(--quaternary);
+    font-size: 12px;
+    padding: 0rem 0.5rem 0rem 0.5rem;
+    position: absolute;
+    top: 0.5rem;
+    right: 0.5rem;
+    border-radius: 0.6rem;
+    background-color: var(--primary);
+}
+
+/* Fading animation */
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+.fade img {
+    border-radius: var(--border-radius);
+}
+
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+/**/
+
+.slideshow-container {
+    width: 35%;
+}
+
+.presentation-header {
+    margin: 6rem 0 3rem 0;
+}
+
+.competences {
+    margin: 3rem 0 3rem 0;
+}
+
+.competences-header {
+    padding-top: 2rem;
+    text-align: center;
+}
+
+/******************PRESENTATION*******************/
+.presentation {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    /* align-items: center;
+    margin-top: 2em; */
+    margin-bottom: 3em;
+}
+
+.presentation em {
+    display: inline-block;
+    margin-bottom: 0.5em;
+    font-size: 24px;
+
+}
+
+.presentation-description .title {
+    margin: 0.5em 0em 0.5em 0em;
+}
+
+.presentation-description {
+    width: 60%;
+    text-align: justify;
+    margin-left: 3rem;
+}
+
+
+@media (max-width: 1024px) {
+
+    .slideshow-container {
+        width: 100%;
+        margin-bottom: 2rem;
+    }
+
+    .presentation-description {
+        width: 100%;
+        text-align: justify;
+        margin-left: 0rem;
+    }
+}
+
+
+/******************PRESENTATION*******************/
+
+.badge {
+    color: white;
+    border-radius: var(--border-radius);
+    align-items: center;
+}
+
+
+.badge i {
+    font-size: 22px;
+    margin-left: 0.8rem;
+    font-weight: bold;
+}
+
+
+.badge .btn:first-child {
+    margin-top: 2rem;
+}
+
+.badge .btn:last-child {
+    margin-top: 1rem;
+}
+
+
+/*****************************************OUTILS*******************************************/
+.outils {
+    display: flex;
+    margin: 2rem 0 2rem 0;
+
+}
+
+.outils-icon {
+    width: 3rem;
+    margin: 1rem;
+}
+
+
+.outils-content {
+    max-width: 55%;
+    margin-left: 2rem;
+}
+
+@media (max-width: 768px) {
+
+    .outils {
+        display: flex;
+        flex-direction: column;
+        /* margin: 2rem 0 2rem 0; */
+    }
+
+    .outils-content {
+        max-width: 100%;
+        margin-left: 0rem;
+    }
+}
+
+/*****************************************TABS*******************************************/
+.tabs {
+    max-width: 40%;
+    font-family: 'Karla', sans-serif;
+    font-size: 20px;
+}
+
+.tabs .tab-registers {
+    display: flex;
+    background-color: RGB(255, 255, 255);
+}
+
+
+.tabs button {
+    /* padding: 0.5em; */
+    background-color: RGB(255, 255, 255);
+    border: none;
+    font: inherit;
+    border-radius: 10px 10px 0 0;
+}
+
+/* .tabs .tab-registers button:hover {
+    cursor: pointer;
+} */
+
+.tabs .tab-bodies {
+    width: 600px;
+    padding: 0.5em;
+    flex-grow: 1;
+    overflow-y: auto;
+    border-radius: 0 10px 10px 10px;
+}
+
+@media (max-width: 768px) {
+    .tabs {
+        max-width: 100%;
+    }
+
+    .tabs .tab-bodies {
+        width: 280px;
+    }
+}
